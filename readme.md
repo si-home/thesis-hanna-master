@@ -1,4 +1,4 @@
-# Thesis Template
+# thesis-hanna-master
 
 ## Purpose
 
