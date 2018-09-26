@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -24,8 +24,6 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
-\use_microtype false
-\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -64,7 +62,6 @@
 \suppress_date false
 \justification true
 \use_refstyle 1
-\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -73,10 +70,7 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\is_math_indent 0
-\math_numbering_side default
-\quotes_style german
-\dynamic_quotes 0
+\quotes_language german
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -125,16 +119,6 @@ Zweites Kapitel
 
 \begin_layout Section
 Abbildungen
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Abbildungen
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -279,64 +263,6 @@ Point to Point
 \end_layout
 
 \begin_layout Standard
-Natürlich können auch Grafiken und Bilder eingebunden werden
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename bilder/hsma-logo.pdf
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Logo
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Logo"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-Jetzt können wir etwa mit Abbildung 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Logo"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- auf das Bild verweisen.
- 
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -368,7 +294,6 @@ Siehe
 LatexCommand cite
 after "S. 89"
 key "Willberg1999"
-literal "true"
 
 \end_inset
 
@@ -381,9 +306,6 @@ literal "true"
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Kopplungsformen"
-plural "false"
-caps "false"
-noprefix "false"
 
 \end_inset
 
@@ -442,7 +364,7 @@ footnotesize
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
 <row>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -453,7 +375,7 @@ Form der Kopplung
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -464,7 +386,7 @@ enge Kopplung
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -477,7 +399,7 @@ lose Kopplung
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -486,7 +408,7 @@ Physikalische Verbindung
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -495,7 +417,7 @@ Punkt-zu-Punkt
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -506,7 +428,7 @@ Punkt-zu-Punkt
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -515,7 +437,7 @@ Kommunikationsstil
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -524,7 +446,7 @@ synchron
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -535,7 +457,7 @@ asynchron
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -544,7 +466,7 @@ Datenmodell
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -553,7 +475,7 @@ komplexe gemeinsame Typen
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -564,7 +486,7 @@ nur einfache gemeinsame Typen
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -573,7 +495,7 @@ Bindung
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -582,7 +504,7 @@ statisch
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -650,23 +572,6 @@ reference "tab:Kopplungsformen"
 
 .
  
-\end_layout
-
-\begin_layout Standard
-Hier kommt wieder ein Blindtext
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Blindtext
-\end_layout
-
-\end_inset
-
-: 
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -674,7 +579,27 @@ status open
 
 
 \backslash
-blindtext[1]
+blindtext
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "literatur"
+options "alpha"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset

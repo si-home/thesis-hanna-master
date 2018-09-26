@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -28,6 +28,8 @@ logicalmkup
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -66,6 +68,7 @@ logicalmkup
 \suppress_date false
 \justification true
 \use_refstyle 1
+\use_minted 0
 \branch Einführung
 \selected 1
 \filename_suffix 0
@@ -79,7 +82,10 @@ logicalmkup
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language german
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style german
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 2
 \paperpagestyle headings
@@ -166,7 +172,7 @@ status open
 \backslash
 newcommand{
 \backslash
-hsmasprache}{de} % de oder en für Deutsch oder Englisch
+hsmasprache}{en} % de oder en für Deutsch oder Englisch
 \end_layout
 
 \begin_layout Plain Layout
@@ -184,8 +190,8 @@ hsmasprache}{de} % de oder en für Deutsch oder Englisch
 \backslash
 newcommand{
 \backslash
-hsmatitelde}{Einsatz eines Flux-Kompensators für Zeitreisen mit einer maximalen
- Höchstgeschwindigkeit von WARP~7}
+hsmatitelde}{Computersimulationen zur Evolution der tRNA-Aminosäure-Bindungserke
+nnung als Modell für den genetischen Code}
 \end_layout
 
 \begin_layout Plain Layout
@@ -203,8 +209,8 @@ hsmatitelde}{Einsatz eines Flux-Kompensators für Zeitreisen mit einer maximalen
 \backslash
 newcommand{
 \backslash
-hsmatitelen}{Application of a flux compensator for timetravel with a maximum
- velocity of warp~7}
+hsmatitelen}{Computer simulations on the evolution of tRNA-amino-acid binding
+ recognition as a model for the genetic code}
 \end_layout
 
 \begin_layout Plain Layout
@@ -231,7 +237,7 @@ hsmaort}{Mannheim}    % Ort
 \backslash
 newcommand{
 \backslash
-hsmaautorvname}{Max} % Vorname(n)
+hsmaautorvname}{Hanna} % Vorname(n)
 \end_layout
 
 \begin_layout Plain Layout
@@ -240,7 +246,7 @@ hsmaautorvname}{Max} % Vorname(n)
 \backslash
 newcommand{
 \backslash
-hsmaautornname}{Mustermann} % Nachname(n)
+hsmaautornname}{Schumacher} % Nachname(n)
 \end_layout
 
 \begin_layout Plain Layout
@@ -249,7 +255,7 @@ hsmaautornname}{Mustermann} % Nachname(n)
 \backslash
 newcommand{
 \backslash
-hsmadatum}{11.11.2015} % Datum der Abgabe
+hsmadatum}{28.02.2019} % Datum der Abgabe
 \end_layout
 
 \begin_layout Plain Layout
@@ -258,7 +264,7 @@ hsmadatum}{11.11.2015} % Datum der Abgabe
 \backslash
 newcommand{
 \backslash
-hsmajahr}{2015} % Jahr der Abgabe
+hsmajahr}{2019} % Jahr der Abgabe
 \end_layout
 
 \begin_layout Plain Layout
@@ -267,8 +273,8 @@ hsmajahr}{2015} % Jahr der Abgabe
 \backslash
 newcommand{
 \backslash
-hsmafirma}{Paukenschlag GmbH, Mannheim} % Firma bei der die Arbeit durchgeführt
- wurde
+hsmafirma}{Hochschule Mannheim, Mannheim} % Firma bei der die Arbeit durchgeführ
+t wurde
 \end_layout
 
 \begin_layout Plain Layout
@@ -278,7 +284,7 @@ hsmafirma}{Paukenschlag GmbH, Mannheim} % Firma bei der die Arbeit durchgeführt
 newcommand{
 \backslash
 hsmabetreuer}{Prof.
- Peter Mustermann, Hochschule Mannheim} % Betreuer an der Hochschule
+ Markus Gumbel, Hochschule Mannheim} % Betreuer an der Hochschule
 \end_layout
 
 \begin_layout Plain Layout
@@ -287,8 +293,9 @@ hsmabetreuer}{Prof.
 \backslash
 newcommand{
 \backslash
-hsmazweitkorrektor}{Erika Mustermann, Paukenschlag GmbH} % Betreuer im Unternehm
-en oder Zweitkorrektor
+hsmazweitkorrektor}{Prof.
+ Lutz Strüngmann, Hochschule Mannheim} % Betreuer im Unternehmen oder Zweitkorre
+ktor
 \end_layout
 
 \begin_layout Plain Layout
@@ -306,7 +313,7 @@ hsmafakultaet}{I} % I für Informatik
 \backslash
 newcommand{
 \backslash
-hsmastudiengang}{IB} % IB IMB UIB IM MTB
+hsmastudiengang}{IM} % IB IMB UIB IM MTB
 \end_layout
 
 \begin_layout Plain Layout
@@ -596,10 +603,22 @@ Anhang
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+von si.
+ BibTeX Literaturverzeichnis: import von literatur_citavi.bib
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
+btprint "btPrintAll"
 bibfiles "literatur"
-options "plainnat"
+options "plain"
 
 \end_inset
 
@@ -615,6 +634,8 @@ options "plainnat"
 \begin_inset CommandInset index_print
 LatexCommand printindex
 type "idx"
+name "Index"
+literal "true"
 
 \end_inset
 

@@ -142,7 +142,17 @@ Textauszeichnungen
 \end_layout
 
 \begin_layout Standard
-Man kann Text auch kursiv oder fett setzen.
+Man kann Text auch 
+\shape italic
+kursiv
+\shape default
+ oder
+\series bold
+\shape italic
+ fett
+\series default
+\shape default
+ setzen.
  Es gibt Bindestriche -, Gedankenstriche – und lange Striche —.
  
 \end_layout
@@ -172,7 +182,7 @@ Abkürzungen
 \begin_layout Standard
 Eine Abkürzung (ABK) wird bei der ersten Verwendung ausgeschrieben
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Ausschreiben bedeutet, dass man nicht die Abkürzung sondern die lange Form
@@ -185,7 +195,7 @@ Ausschreiben bedeutet, dass man nicht die Abkürzung sondern die lange Form
  Danach nicht mehr: ABK.
  Man kann allerdings die Langform
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -205,17 +215,8 @@ blindtext
 
 \end_inset
 
- explizit anfordern: Abkürzungen
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Demo Fußnote
-\end_layout
-
-\end_inset
-
- oder die Kurzform ABK oder auch noch einmal die Definition: Abkürzung (ABK).
+ explizit anfordern: Abkürzungen oder die Kurzform ABK oder auch noch einmal
+ die Definition: Abkürzung (ABK).
  
 \end_layout
 
@@ -262,8 +263,8 @@ Literaturarbeit
 Wichtig ist das korrekte Zitieren von Quellen, wie es auch von 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Kornmeier2011"
-literal "true"
+key "FriedrichForstman.2002"
+literal "false"
 
 \end_inset
 
@@ -271,8 +272,8 @@ literal "true"
  Interessant ist in diesem Zusammenhang auch der Artikel von 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Willberg1999"
-literal "true"
+key "HansPeterWilliberg.1999"
+literal "false"
 
 \end_inset
 
@@ -280,8 +281,7 @@ literal "true"
  Häufig werden die Zitate auch in Klammern gesetzt, wie bei [
 \begin_inset CommandInset citation
 LatexCommand cite
-after "Test"
-key "Weber2006,Kramer2009"
+key "MarinKornmeier.2011"
 literal "false"
 
 \end_inset
@@ -306,11 +306,19 @@ blindtext
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-btprint "btPrintAll"
 bibfiles "literatur"
-options "bibtotoc,plain"
+options "alpha"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
