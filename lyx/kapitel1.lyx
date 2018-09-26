@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -24,6 +24,8 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -62,6 +64,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 1
+\use_minted 0
 \index Index
 \shortcut idx
 \color #008000
@@ -70,7 +73,10 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language german
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style german
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -166,7 +172,7 @@ Abkürzungen
 \begin_layout Standard
 Eine Abkürzung (ABK) wird bei der ersten Verwendung ausgeschrieben
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Ausschreiben bedeutet, dass man nicht die Abkürzung sondern die lange Form
@@ -179,7 +185,7 @@ Ausschreiben bedeutet, dass man nicht die Abkürzung sondern die lange Form
  Danach nicht mehr: ABK.
  Man kann allerdings die Langform
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -199,8 +205,17 @@ blindtext
 
 \end_inset
 
- explizit anfordern: Abkürzungen oder die Kurzform ABK oder auch noch einmal
- die Definition: Abkürzung (ABK).
+ explizit anfordern: Abkürzungen
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Demo Fußnote
+\end_layout
+
+\end_inset
+
+ oder die Kurzform ABK oder auch noch einmal die Definition: Abkürzung (ABK).
  
 \end_layout
 
@@ -248,6 +263,7 @@ Wichtig ist das korrekte Zitieren von Quellen, wie es auch von
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Kornmeier2011"
+literal "true"
 
 \end_inset
 
@@ -255,12 +271,22 @@ key "Kornmeier2011"
  Interessant ist in diesem Zusammenhang auch der Artikel von 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Vixie2007"
+key "Willberg1999"
+literal "true"
 
 \end_inset
 
 .
- Häufig werden die Zitate auch in Klammern gesetzt, wie bei [?].
+ Häufig werden die Zitate auch in Klammern gesetzt, wie bei [
+\begin_inset CommandInset citation
+LatexCommand cite
+after "Test"
+key "Weber2006,Kramer2009"
+literal "false"
+
+\end_inset
+
+].
 \end_layout
 
 \begin_layout Standard
@@ -280,19 +306,11 @@ blindtext
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
+btprint "btPrintAll"
 bibfiles "literatur"
-options "alpha"
-
-\end_inset
-
-
-\end_layout
+options "bibtotoc,plain"
 
 \end_inset
 
